@@ -323,59 +323,112 @@ export default function Index() {
         </div>
       </section>
 
-      {/* PLANS */}
+      {/* READY HOMES */}
       <section id="plans" className="py-24 bg-stone-950">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           <div className="text-center mb-16">
-            <div className="inline-block text-emerald-400 text-sm font-semibold tracking-widest uppercase mb-3">Комплектации</div>
-            <h2 className="text-4xl sm:text-5xl font-black text-white">Тарифы и цены</h2>
+            <div className="inline-block text-emerald-400 text-sm font-semibold tracking-widest uppercase mb-3">Уже построено</div>
+            <h2 className="text-4xl sm:text-5xl font-black text-white">Готовые дома</h2>
+            <p className="text-stone-400 mt-4 text-lg">Реальные объекты, сданные нашим клиентам</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
-            {plans.map((plan) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                img: "https://static.tildacdn.com/tild6138-6337-4434-b839-636163663537/cover.jpg",
+                name: "Дом в Гурьевске",
+                area: "120 м²",
+                floors: "2 этажа",
+                year: "2023",
+                tag: "Сдан",
+              },
+              {
+                img: INTERIOR_IMG,
+                name: "Дом в Зеленоградске",
+                area: "98 м²",
+                floors: "1 этаж",
+                year: "2023",
+                tag: "Сдан",
+              },
+              {
+                img: WORKERS_IMG,
+                name: "Дом в Калининграде",
+                area: "160 м²",
+                floors: "2 этажа",
+                year: "2024",
+                tag: "Сдан",
+              },
+              {
+                img: "https://static.tildacdn.com/tild3232-3336-4133-a132-633033306361/a7e01016339944963e50.jpg",
+                name: "Дом в Светлогорске",
+                area: "145 м²",
+                floors: "2 этажа",
+                year: "2024",
+                tag: "Сдан",
+              },
+              {
+                img: INTERIOR_IMG,
+                name: "Дом в Черняховске",
+                area: "85 м²",
+                floors: "1 этаж",
+                year: "2024",
+                tag: "Сдан",
+              },
+              {
+                img: WORKERS_IMG,
+                name: "Дом в Балтийске",
+                area: "210 м²",
+                floors: "2 этажа + мансарда",
+                year: "2024",
+                tag: "Сдан",
+              },
+            ].map((house) => (
               <div
-                key={plan.name}
-                className={`rounded-2xl p-8 flex flex-col border transition-all ${
-                  plan.highlight
-                    ? "bg-emerald-600 border-emerald-500 shadow-2xl shadow-emerald-500/20 md:scale-105"
-                    : "bg-stone-800/60 border-stone-700/50 hover:border-emerald-500/40"
-                }`}
+                key={house.name}
+                className="bg-stone-900 rounded-2xl overflow-hidden border border-stone-700/50 hover:border-emerald-500/40 transition-all group hover:-translate-y-1"
               >
-                {plan.highlight && (
-                  <div className="text-center mb-4">
-                    <span className="bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full">Рекомендуем</span>
+                <div className="relative h-52 overflow-hidden">
+                  <img
+                    src={house.img}
+                    alt={house.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute top-3 left-3">
+                    <span className="bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full">{house.tag}</span>
                   </div>
-                )}
-                <h3 className="text-2xl font-black text-white mb-2">{plan.name}</h3>
-                <div className={`text-3xl font-black mb-6 ${plan.highlight ? "text-white" : "text-emerald-400"}`}>
-                  {plan.price}
+                  <div className="absolute top-3 right-3">
+                    <span className="bg-black/50 text-white text-xs px-2 py-1 rounded-full backdrop-blur-sm">{house.year}</span>
+                  </div>
                 </div>
-                <ul className="space-y-3 flex-1 mb-8">
-                  {plan.features.map((f) => (
-                    <li
-                      key={f}
-                      className={`flex items-start gap-3 text-sm ${plan.highlight ? "text-white/90" : "text-stone-300"}`}
-                    >
-                      <Icon
-                        name="Check"
-                        size={16}
-                        className={`mt-0.5 flex-shrink-0 ${plan.highlight ? "text-white" : "text-emerald-400"}`}
-                      />
-                      {f}
-                    </li>
-                  ))}
-                </ul>
-                <a
-                  href="#contact"
-                  className={`block text-center py-3 rounded-xl font-bold transition-all ${
-                    plan.highlight
-                      ? "bg-white text-emerald-700 hover:bg-stone-100"
-                      : "bg-emerald-600 text-white hover:bg-emerald-500"
-                  }`}
-                >
-                  Выбрать
-                </a>
+                <div className="p-5">
+                  <h3 className="text-lg font-black text-white mb-3">{house.name}</h3>
+                  <div className="flex gap-4 text-stone-400 text-sm mb-4">
+                    <span className="flex items-center gap-1.5">
+                      <Icon name="Square" size={14} className="text-emerald-400" />
+                      {house.area}
+                    </span>
+                    <span className="flex items-center gap-1.5">
+                      <Icon name="Building2" size={14} className="text-emerald-400" />
+                      {house.floors}
+                    </span>
+                  </div>
+                  <a
+                    href="#contact"
+                    className="inline-flex items-center gap-1 text-sm text-emerald-400 hover:text-emerald-300 font-semibold transition-colors"
+                  >
+                    Хочу такой же <Icon name="ArrowRight" size={14} />
+                  </a>
+                </div>
               </div>
             ))}
+          </div>
+          <div className="text-center mt-10">
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2 border border-emerald-500/50 hover:border-emerald-400 text-emerald-400 hover:text-emerald-300 px-8 py-3 rounded-xl font-semibold transition-all"
+            >
+              Смотреть все объекты
+              <Icon name="ArrowRight" size={18} />
+            </a>
           </div>
         </div>
       </section>
