@@ -132,11 +132,11 @@ export default function Index() {
             <a href="#contact" className="hover:text-emerald-400 transition-colors">Контакты</a>
           </div>
           <a
-            href="tel:+74012000000"
+            href="tel:+79622674779"
             className="hidden md:flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
           >
             <Icon name="Phone" size={14} />
-            +7 (4012) 00-00-00
+            +7 962 267 47-79
           </a>
           <button className="md:hidden text-stone-300" onClick={() => setMenuOpen(!menuOpen)}>
             <Icon name={menuOpen ? "X" : "Menu"} size={24} />
@@ -149,7 +149,7 @@ export default function Index() {
             <a href="#plans" onClick={() => setMenuOpen(false)} className="text-stone-300">Тарифы</a>
             <a href="#reviews" onClick={() => setMenuOpen(false)} className="text-stone-300">Отзывы</a>
             <a href="#contact" onClick={() => setMenuOpen(false)} className="text-stone-300">Контакты</a>
-            <a href="tel:+74012000000" className="text-emerald-400 font-semibold">+7 (4012) 00-00-00</a>
+            <a href="tel:+79622674779" className="text-emerald-400 font-semibold">+7 962 267 47-79</a>
           </div>
         )}
       </nav>
@@ -456,7 +456,7 @@ export default function Index() {
               </p>
               <div className="space-y-5">
                 {[
-                  { icon: "Phone", label: "Телефон", value: "+7 (4012) 00-00-00" },
+                  { icon: "Phone", label: "Телефон", value: "+7 962 267 47-79" },
                   { icon: "Mail", label: "Email", value: "info@cc-malachite.com" },
                   { icon: "MapPin", label: "Офис", value: "г. Калининград, ул. Примерная, 1" },
                   { icon: "Clock", label: "Режим работы", value: "Пн–Пт 9:00–18:00, Сб 10:00–15:00" },
