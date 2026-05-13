@@ -116,13 +116,8 @@ export default function Index() {
       {/* NAV */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-stone-950/80 backdrop-blur-md border-b border-emerald-900/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-between h-16">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-sm bg-emerald-600 flex items-center justify-center">
-              <span className="text-white font-bold text-sm">М</span>
-            </div>
-            <span className="font-bold text-lg text-white tracking-tight">
-              СК Малахит <span className="text-emerald-400">39</span>
-            </span>
+          <div className="flex items-center">
+            <img src="https://cdn.poehali.dev/projects/00655993-1a8e-409b-8656-b97f8fa9c9c0/bucket/31280f0c-11ef-4a9a-8915-d1364cd182c3.jpg" alt="СК Малахит 39" className="h-10 w-auto object-contain" />
           </div>
           <div className="hidden md:flex items-center gap-8 text-sm text-stone-400">
             <a href="#advantages" className="hover:text-emerald-400 transition-colors">Преимущества</a>
@@ -537,11 +532,8 @@ export default function Index() {
       {/* FOOTER */}
       <footer className="bg-stone-900 border-t border-stone-800 py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
-            <div className="w-7 h-7 rounded-sm bg-emerald-600 flex items-center justify-center">
-              <span className="text-white font-bold text-xs">М</span>
-            </div>
-            <span className="font-bold text-white">СК Малахит 39</span>
+          <div className="flex items-center">
+            <img src="https://cdn.poehali.dev/projects/00655993-1a8e-409b-8656-b97f8fa9c9c0/bucket/31280f0c-11ef-4a9a-8915-d1364cd182c3.jpg" alt="СК Малахит 39" className="h-8 w-auto object-contain" />
           </div>
           <div className="text-stone-500 text-sm text-center">ООО «СК Малахит 39» · Калининград · © 2024</div>
           <div className="flex gap-6 text-sm text-stone-500">
