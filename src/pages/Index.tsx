@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Icon from "@/components/ui/icon";
 
-const HERO_IMG = "https://cdn.poehali.dev/projects/00655993-1a8e-409b-8656-b97f8fa9c9c0/files/5b63c5dc-f736-4e71-befa-2236a37359a2.jpg";
+const HERO_IMG = "https://static.tildacdn.com/tild3232-3336-4133-a132-633033306361/a7e01016339944963e50.jpg";
 const INTERIOR_IMG = "https://cdn.poehali.dev/projects/00655993-1a8e-409b-8656-b97f8fa9c9c0/files/98816d52-79b2-4cfa-b792-cd149edb3803.jpg";
 const WORKERS_IMG = "https://cdn.poehali.dev/projects/00655993-1a8e-409b-8656-b97f8fa9c9c0/files/a6762df8-cb07-4177-bf02-beae229777f1.jpg";
 
@@ -117,7 +117,7 @@ export default function Index() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-stone-950/80 backdrop-blur-md border-b border-emerald-900/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 flex items-center justify-between h-16">
           <div className="flex items-center">
-            <img src="https://static.tildacdn.com/tild3232-3336-4133-a132-633033306361/a7e01016339944963e50.jpg" alt="СК Малахит 39" className="h-10 w-auto object-contain rounded-lg bg-white px-2 py-1" />
+            <img src="https://cdn.poehali.dev/projects/00655993-1a8e-409b-8656-b97f8fa9c9c0/bucket/0f1b7027-add6-4e4f-9eb9-143a80bfdec0.jpg" alt="СК Малахит 39" className="h-10 w-auto object-contain rounded-lg bg-white px-2 py-1" />
           </div>
           <div className="hidden md:flex items-center gap-8 text-sm text-stone-400">
             <a href="#advantages" className="hover:text-emerald-400 transition-colors">Преимущества</a>
@@ -533,7 +533,7 @@ export default function Index() {
       <footer className="bg-stone-900 border-t border-stone-800 py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center">
-            <img src="https://static.tildacdn.com/tild3232-3336-4133-a132-633033306361/a7e01016339944963e50.jpg" alt="СК Малахит 39" className="h-8 w-auto object-contain rounded-md bg-white px-2 py-0.5" />
+            <img src="https://cdn.poehali.dev/projects/00655993-1a8e-409b-8656-b97f8fa9c9c0/bucket/0f1b7027-add6-4e4f-9eb9-143a80bfdec0.jpg" alt="СК Малахит 39" className="h-8 w-auto object-contain rounded-md bg-white px-2 py-0.5" />
           </div>
           <div className="text-stone-500 text-sm text-center">ООО «СК Малахит 39» · Калининград · © 2024</div>
           <div className="flex gap-6 text-sm text-stone-500">
